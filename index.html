@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Muhammad Huzaifa - AI Automation / Full Stack Engineer with 6+ years of experience in SaaS, Ruby on Rails, Shopify, APIs, AWS, and AI-powered workflows." />
-  <title>Muhammad Huzaifa | AI Automation / Full Stack Engineer</title>
+  <meta name="description" content="Muhammad Huzaifa - AI Engineer / Full Stack Engineer with 6+ years of experience in SaaS, Ruby on Rails, Shopify, APIs, AWS, and AI-powered workflows." />
+  <title>Muhammad Huzaifa | AI Engineer / Full Stack Engineer</title>
   <style>
     :root {
       --bg: #080914;
@@ -130,42 +130,45 @@
     .status-badge {
       display: inline-flex;
       align-items: center;
-      gap: 13px;
-      padding: 18px 26px;
+      gap: 9px;
+      padding: 11px 15px;
       border: 1px solid var(--border-strong);
-      border-radius: 16px;
+      border-radius: 10px;
       color: var(--text);
       font-weight: 900;
+      font-size: 12px;
       background: rgba(255,255,255,.035);
       box-shadow: 0 10px 30px rgba(0,0,0,.12);
     }
-    .status-badge .spark { color: var(--primary); font-size: 22px; }
+    .status-badge .spark { color: var(--primary); font-size: 16px; }
     .hero h1 {
-      margin: 42px 0 22px;
+      margin: 42px 0 26px;
       max-width: 620px;
-      font-size: clamp(38px, 5.4vw, 64px);
-      line-height: 1.12;
-      letter-spacing: -.025em;
-      font-weight: 720;
-    }
-    .hero-subtitle {
-      max-width: 650px;
-      font-size: clamp(22px, 2.4vw, 28px);
-      line-height: 1.38;
+      font-size: clamp(34px, 4.7vw, 55px);
+      line-height: 1.14;
       letter-spacing: -.018em;
-      font-weight: 750;
-      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .hero h1 span { white-space: nowrap; }
+    .hero-subtitle {
+      max-width: 490px;
+      font-size: clamp(17px, 1.75vw, 21px);
+      line-height: 1.45;
+      letter-spacing: -.01em;
+      font-weight: 650;
+      margin: 0 0 18px;
     }
     .hero-subtitle span { color: var(--muted); }
     .hero-copy {
-      max-width: 720px;
+      max-width: 490px;
       color: var(--muted);
       font-size: 18px;
       line-height: 1.72;
       margin: 0 0 30px;
       font-weight: 500;
+      text-align: left;
     }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 34px; }
+    .hero-actions { max-width: 490px; display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 34px; }
     .btn {
       min-height: 58px;
       display: inline-flex;
@@ -181,7 +184,7 @@
     .btn:hover { transform: translateY(-2px); }
     .btn-primary { background: var(--primary); color: var(--primary-text); }
     .btn-outline { background: rgba(255,255,255,.035); color: var(--text); }
-    .socials { display: flex; flex-wrap: wrap; gap: 10px; }
+    .socials { max-width: 490px; display: flex; flex-wrap: wrap; gap: 10px; }
     .social {
       min-width: auto;
       min-height: 42px;
@@ -264,23 +267,23 @@
       bottom: 58px;
       display: inline-flex;
       align-items: center;
-      gap: 12px;
+      gap: 8px;
       border: 1px solid var(--border-strong);
       background: color-mix(in srgb, var(--card) 94%, transparent);
       color: var(--text);
-      padding: 14px 18px;
-      border-radius: 16px;
+      padding: 10px 13px;
+      border-radius: 10px;
       font-weight: 950;
-      font-size: 15px;
+      font-size: 12px;
       box-shadow: var(--shadow);
       z-index: 5;
     }
     .hire-badge .dot {
-      width: 17px;
-      height: 17px;
+      width: 10px;
+      height: 10px;
       border-radius: 999px;
       background: var(--accent);
-      box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 20%, transparent);
+      box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 20%, transparent);
     }
 
     .section-title { text-align: center; max-width: 700px; margin: 0 auto 48px; }
@@ -368,10 +371,11 @@
       .nav-inner { padding: 12px 18px; }
       .brand { font-size: 18px; }
       .hero { padding: 42px 18px 44px; }
-      .hero h1 { font-size: 36px; line-height: 1.16; }
-      .hero-subtitle { font-size: 21px; line-height: 1.42; }
+      .hero h1 { font-size: 32px; line-height: 1.18; }
+      .hero-subtitle { font-size: 19px; line-height: 1.45; }
+      .hero-subtitle, .hero-copy, .hero-actions, .socials { max-width: 100%; }
       .hero-copy { font-size: 16px; line-height: 1.68; }
-      .status-badge { padding: 14px 18px; }
+      .status-badge { padding: 10px 14px; }
       .hero-actions .btn { width: 100%; }
       .hero-visual { display: none; }
       .projects-grid, .skills-grid, .services-grid, .contact-grid { grid-template-columns: 1fr; }
@@ -404,11 +408,11 @@
     <div class="hero-grid">
       <div class="hero-content">
         <div class="status-badge"><span class="spark">✣</span> Available for Work</div>
-        <h1>Hello, I'm Muhammad Huzaifa</h1>
-        <div class="hero-subtitle">AI Automation / Full Stack Engineer <span>with 6+ years of experience</span></div>
-        <p class="hero-copy">I build scalable SaaS platforms, Ruby on Rails applications, React/Vue frontends, Shopify solutions, APIs, AWS deployments, and practical AI-powered automation workflows that help teams ship faster.</p>
+        <h1>Hello, I'm<br><span>Muhammad Huzaifa</span></h1>
+        <div class="hero-subtitle">AI Engineer / Full Stack Engineer <span>with 6+ years of experience</span></div>
+        <p class="hero-copy">I build AI-powered applications, SaaS platforms, Rails backends, React/Vue frontends, Shopify solutions, APIs, and AWS deployments that help teams improve workflows and ship reliable products faster.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="Huzaifa_Resume.pdf" download>↓ Download Resume</a>
+          <a class="btn btn-primary" id="resumeDownload" href="Huzaifa_Resume.pdf" download="Muhammad_Huzaifa_Resume.pdf" target="_blank" rel="noopener">↓ Download Resume</a>
           <a class="btn btn-outline" href="#projects">View My Work</a>
         </div>
         <div class="socials">
@@ -427,6 +431,21 @@
     </div>
   </header>
 
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-title"><h2>Services</h2><p>AI development comes first, supported by the full engineering stack needed to ship reliable software products.</p></div>
+      <div class="services-grid">
+        <div class="service-pill">AI Development & Integrations</div>
+        <div class="service-pill">AI Product & MVP Development</div>
+        <div class="service-pill">Ruby on Rails Web Development</div>
+        <div class="service-pill">Shopify App Development</div>
+        <div class="service-pill">Backend APIs & Integrations</div>
+        <div class="service-pill">Cloud, DevOps & Performance</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Will add in future
   <section id="projects" class="section">
     <div class="container">
       <div class="section-title">
@@ -461,6 +480,7 @@
       </div>
     </div>
   </section>
+  -->
 
   <section id="skills" class="section">
     <div class="container">
@@ -487,7 +507,7 @@
       </div>
       <div class="experience-list">
         <article class="card exp-card">
-          <div class="exp-top"><div><h3 class="exp-role">Senior Software Engineer / AI Development</h3><p class="exp-company">Tkxel</p></div><div class="exp-meta"><p>Aug 2023 - Present</p><p>Lahore, Pakistan</p></div></div>
+          <div class="exp-top"><div><h3 class="exp-role">Senior Software Engineer / AI Engineer</h3><p class="exp-company">Tkxel</p></div><div class="exp-meta"><p>Aug 2023 - Present</p><p>Lahore, Pakistan</p></div></div>
           <p class="exp-desc">Working on production systems and AI-enabled development, including API-driven workflows, AI-assisted MVP/demo systems, testing, reliability, and user experience improvements.</p>
           <div class="tags"><span class="tag">AI Development</span><span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">Claude</span><span class="tag">OpenAI</span><span class="tag">APIs</span></div>
           <div class="exp-details"><ul><li>Used AI-assisted development tools to speed up the development of demo and MVP systems while maintaining production-quality engineering practices.</li><li>Implemented an AI agent using RAG and LangChain concepts to retrieve contextual information and support intelligent user workflows.</li><li>Developed a discovery agent system using Claude and OpenAI LLMs for intelligent information discovery and workflow assistance.</li><li>Worked with LLM-based systems, prompt design, backend integrations, and automation workflows to support AI-enabled product development.</li><li>Increased test coverage by 30% and improved code quality, stability, and long-term maintainability.</li><li>Reduced user-reported issues by 70% through debugging, refactoring, quality improvements, and system-level fixes.</li><li>Improved the main ordering module by replacing scraper-based workflows with reliable API-based integrations.</li></ul></div>
@@ -529,20 +549,6 @@
     </div>
   </section>
 
-  <section id="services" class="section">
-    <div class="container">
-      <div class="section-title"><h2>Services</h2><p>AI development comes first, supported by the full engineering stack needed to ship reliable software products.</p></div>
-      <div class="services-grid">
-        <div class="service-pill">AI Automation & Integrations</div>
-        <div class="service-pill">AI Product & MVP Development</div>
-        <div class="service-pill">Ruby on Rails Web Development</div>
-        <div class="service-pill">Shopify App Development</div>
-        <div class="service-pill">Backend APIs & Integrations</div>
-        <div class="service-pill">Cloud, DevOps & Performance</div>
-      </div>
-    </div>
-  </section>
-
   <section id="contact" class="section">
     <div class="container">
       <div class="section-title"><h2>Let's Work Together</h2><p>Have an AI idea, SaaS product, Shopify project, or senior engineering role in mind? Let's discuss how I can help.</p></div>
@@ -568,7 +574,7 @@
 
   <footer>
     <strong>Muhammad Huzaifa</strong>
-    <p>AI Automation / Full Stack Engineer</p>
+    <p>AI Engineer / Full Stack Engineer</p>
   </footer>
 
   <script>
@@ -611,6 +617,31 @@
         btn.textContent = details.classList.contains('show') ? 'Hide details' : 'View details';
       });
     });
+
+    const resumeDownload = document.getElementById('resumeDownload');
+    if (resumeDownload) {
+      resumeDownload.addEventListener('click', async (event) => {
+        event.preventDefault();
+        const fileUrl = resumeDownload.getAttribute('href');
+        const fileName = resumeDownload.getAttribute('download') || 'Muhammad_Huzaifa_Resume.pdf';
+
+        try {
+          const response = await fetch(fileUrl);
+          if (!response.ok) throw new Error('Resume file unavailable');
+          const blob = await response.blob();
+          const objectUrl = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = objectUrl;
+          link.download = fileName;
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+          URL.revokeObjectURL(objectUrl);
+        } catch (error) {
+          window.open(fileUrl, '_blank', 'noopener');
+        }
+      });
+    }
 
     const contactForm = document.getElementById('contactForm');
     if (contactForm) contactForm.addEventListener('submit', (event) => {
