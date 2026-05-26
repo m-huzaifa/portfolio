@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Huzaifa | AI Automation / Full Stack Engineer</title>
+  <meta name="description" content="Muhammad Huzaifa - AI Automation / Full Stack Engineer with 6+ years of experience building SaaS platforms, Ruby on Rails applications, React/Vue interfaces, Shopify solutions, APIs, AWS deployments, and AI automation workflows." />
+  <style>
+    :root {
+      --bg: #fbfbfc;
+      --card: #ffffff;
+      --ink: #090915;
+      --muted: #6f7280;
+      --soft: #f1f2f5;
+      --line: #e1e3e8;
+      --accent: #060615;
+      --accent-2: #3b82f6;
+      --green: #22c55e;
+      --shadow: 0 22px 70px rgba(15, 23, 42, 0.10);
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.06);
+      --radius: 22px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #090915;
+      --card: #11121d;
+      --ink: #f7f7fb;
+      --muted: #a4a8b8;
+      --soft: #181a27;
+      --line: #282b3a;
+      --accent: #ffffff;
+      --accent-2: #60a5fa;
+      --shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.20);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 8% 12%, rgba(59, 130, 246, 0.07), transparent 25%),
+        radial-gradient(circle at 92% 8%, rgba(15, 23, 42, 0.06), transparent 28%),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      transition: background .25s ease, color .25s ease;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1110px, 92%); margin: 0 auto; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: color-mix(in srgb, var(--bg) 84%, transparent);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(20px);
+    }
+    .nav-inner { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { font-weight: 800; letter-spacing: -0.04em; font-size: 18px; }
+    .nav-links { display: flex; align-items: center; gap: 30px; color: var(--muted); font-size: 14px; font-weight: 700; }
+    .nav-links a:hover { color: var(--ink); }
+    .icon-btn { border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: 18px; width: 36px; height: 36px; border-radius: 50%; }
+    .icon-btn:hover { background: var(--soft); }
+
+    .hero { min-height: calc(100vh - 72px); display: grid; align-items: center; padding: 76px 0 66px; }
+    .hero-grid { display: grid; grid-template-columns: 1fr .9fr; gap: 68px; align-items: center; }
+    .status-pill { display: inline-flex; align-items: center; gap: 10px; padding: 13px 18px; border-radius: 10px; background: linear-gradient(180deg, var(--soft), color-mix(in srgb, var(--soft) 70%, var(--card))); border: 1px solid color-mix(in srgb, var(--line) 75%, var(--ink)); box-shadow: var(--shadow-soft); font-size: 13px; font-weight: 800; color: var(--ink); }
+    .spark { width: 17px; height: 17px; display: inline-grid; place-items: center; }
+    h1 { font-size: clamp(48px, 7vw, 82px); line-height: .98; letter-spacing: -0.075em; margin: 44px 0 22px; }
+    .hero h1 span { color: #050516; }
+    [data-theme="dark"] .hero h1 span { color: #ffffff; }
+    .hero-subtitle { font-size: clamp(21px, 2.5vw, 28px); line-height: 1.25; color: var(--muted); max-width: 680px; margin: 0 0 20px; font-weight: 650; letter-spacing: -0.035em; }
+    .hero-subtitle strong { color: var(--ink); }
+    .hero-copy { color: var(--muted); max-width: 620px; font-size: 17px; margin: 0 0 32px; }
+    .cta { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 22px; border-radius: 10px; border: 1px solid var(--line); font-weight: 800; font-size: 14px; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+    .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); }
+    .btn.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+    [data-theme="dark"] .btn.primary { color: #090915; }
+    .btn.secondary { background: var(--card); color: var(--ink); }
+    .socials { display: flex; gap: 12px; margin-top: 28px; }
+    .social { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); background: var(--card); color: var(--ink); box-shadow: var(--shadow-soft); }
+    .social:hover { transform: translateY(-2px); }
+
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; margin-top: 72px; }
+    .stat strong { display: block; font-size: 33px; line-height: 1; letter-spacing: -0.055em; }
+    .stat span { display: block; margin-top: 7px; color: var(--muted); font-size: 14px; font-weight: 650; }
+
+    .visual { position: relative; min-height: 440px; display: grid; place-items: center; }
+    .portrait {
+      width: min(370px, 78vw); height: min(370px, 78vw); border-radius: 50%;
+      background: radial-gradient(circle at 34% 24%, #ffffff 0 7%, transparent 8%), linear-gradient(135deg, #151625, #4b5563 55%, #e5e7eb);
+      box-shadow: 0 38px 90px rgba(15, 23, 42, 0.25);
+      border: 7px solid color-mix(in srgb, var(--card) 80%, transparent);
+      position: relative; display: grid; place-items: center; overflow: hidden;
+    }
+    .portrait:before { content: "MH"; font-size: 92px; font-weight: 900; letter-spacing: -0.12em; color: rgba(255,255,255,.9); transform: translateX(-5px); }
+    .portrait:after { content: ""; position: absolute; inset: auto 0 0; height: 34%; background: linear-gradient(180deg, transparent, rgba(0,0,0,.18)); }
+    .floating-card { position: absolute; right: 18%; bottom: 54px; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 15px; padding: 15px 20px; display: flex; align-items: center; gap: 12px; font-weight: 800; color: var(--ink); }
+    .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.12); }
+
+    section { padding: 78px 0; }
+    .section-title { text-align: center; margin-bottom: 42px; }
+    .section-title h2 { margin: 0; font-size: clamp(30px, 4vw, 43px); letter-spacing: -0.055em; line-height: 1.1; }
+    .section-title p { max-width: 680px; margin: 12px auto 0; color: var(--muted); font-size: 15px; }
+
+    .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .skill-card, .experience-card, .project-card, .contact-card { background: color-mix(in srgb, var(--card) 94%, transparent); border: 1px solid var(--line); border-radius: 13px; box-shadow: var(--shadow-soft); }
+    .skill-card { padding: 21px; min-height: 148px; }
+    .skill-card h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 16px; font-size: 14px; letter-spacing: -0.02em; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { font-size: 11px; line-height: 1; padding: 7px 9px; border-radius: 7px; background: var(--soft); color: var(--ink); font-weight: 800; border: 1px solid color-mix(in srgb, var(--line) 70%, transparent); }
+
+    .experience-list { width: min(820px, 100%); margin: 0 auto; display: grid; gap: 18px; }
+    .experience-card { padding: 24px; }
+    .experience-head { display: flex; justify-content: space-between; gap: 20px; align-items: start; margin-bottom: 18px; }
+    .role-title { display: flex; gap: 9px; align-items: center; font-weight: 850; letter-spacing: -0.025em; }
+    .company { color: var(--ink); font-weight: 700; margin-top: 4px; font-size: 13px; }
+    .meta { text-align: right; color: var(--muted); font-size: 13px; display: grid; gap: 6px; white-space: nowrap; }
+    .experience-card p, .experience-card ul { color: var(--muted); font-size: 14px; margin: 0; }
+    .experience-card ul { padding-left: 18px; display: grid; gap: 8px; }
+    .experience-card .chips { margin-top: 16px; }
+
+    .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .project-card { overflow: hidden; display: flex; flex-direction: column; }
+    .project-img { height: 158px; background: linear-gradient(135deg, #e5e7eb, #ffffff); position: relative; overflow: hidden; }
+    [data-theme="dark"] .project-img { background: linear-gradient(135deg, #1f2937, #111827); }
+    .project-img.ai { background: radial-gradient(circle at 22% 24%, rgba(96,165,250,.85), transparent 23%), linear-gradient(135deg, #1e1b4b, #7c3aed); }
+    .project-img.saas { background: radial-gradient(circle at 75% 30%, rgba(34,197,94,.75), transparent 18%), linear-gradient(135deg, #0f172a, #0369a1); }
+    .project-img.shopify { background: radial-gradient(circle at 28% 68%, rgba(16,185,129,.8), transparent 20%), linear-gradient(135deg, #052e16, #15803d); }
+    .project-img:after { content: ""; position: absolute; inset: 24px; border: 1px solid rgba(255,255,255,.48); border-radius: 14px; background: rgba(255,255,255,.13); backdrop-filter: blur(3px); }
+    .project-img:before { content: ""; position: absolute; left: 44px; right: 44px; top: 58px; height: 14px; border-radius: 99px; background: rgba(255,255,255,.70); box-shadow: 0 34px 0 rgba(255,255,255,.55), 0 68px 0 rgba(255,255,255,.35); z-index: 2; }
+    .project-body { padding: 22px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+    .project-body h3 { margin: 0; font-size: 16px; letter-spacing: -0.025em; }
+    .project-body p { margin: 0; color: var(--muted); font-size: 14px; flex: 1; }
+    .project-actions { display: flex; gap: 10px; margin-top: 4px; }
+    .small-btn { display: inline-flex; align-items: center; gap: 7px; padding: 9px 11px; border-radius: 8px; border: 1px solid var(--line); font-weight: 800; font-size: 12px; background: var(--card); }
+    .small-btn.dark { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+    [data-theme="dark"] .small-btn.dark { color: #090915; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .service-card { padding: 24px; border-radius: 16px; border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow-soft); }
+    .service-card h3 { margin: 0 0 10px; font-size: 17px; letter-spacing: -0.03em; }
+    .service-card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .contact-grid { width: min(830px, 100%); margin: 0 auto; display: grid; grid-template-columns: 1fr 1.15fr; gap: 28px; align-items: start; }
+    .contact-methods { display: grid; gap: 16px; }
+    .contact-card { padding: 22px; display: flex; gap: 14px; align-items: center; }
+    .contact-card strong { display: block; font-size: 13px; }
+    .contact-card span { display: block; color: var(--muted); font-size: 13px; }
+    .form-card { background: var(--card); border: 1px solid var(--line); border-radius: 13px; box-shadow: var(--shadow-soft); padding: 22px; }
+    .form-card h3 { margin: 0 0 16px; font-size: 16px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    input, textarea { width: 100%; border: 1px solid transparent; background: var(--soft); color: var(--ink); padding: 14px 15px; border-radius: 9px; outline: none; font: inherit; font-size: 13px; margin-bottom: 12px; }
+    textarea { min-height: 96px; resize: vertical; }
+    input:focus, textarea:focus { border-color: color-mix(in srgb, var(--accent-2) 60%, var(--line)); }
+    .send { width: 100%; min-height: 46px; cursor: pointer; }
+
+    footer { border-top: 1px solid var(--line); padding: 35px 0; text-align: center; color: var(--muted); font-size: 13px; }
+    footer strong { display: block; color: var(--ink); margin-bottom: 8px; }
+
+    @media (max-width: 920px) {
+      .nav-links { display: none; }
+      .hero { min-height: auto; }
+      .hero-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+      .visual { min-height: 360px; }
+      .floating-card { right: 8%; }
+      .skill-grid, .project-grid, .services-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr 1fr; margin-top: 44px; }
+    }
+    @media (max-width: 560px) {
+      .hero { padding-top: 52px; }
+      h1 { margin-top: 28px; }
+      .stats, .form-row { grid-template-columns: 1fr; }
+      .experience-head { display: block; }
+      .meta { text-align: left; margin-top: 12px; }
+      .floating-card { position: static; margin-top: -40px; }
+      .visual { min-height: auto; display: flex; flex-direction: column; }
+      section { padding: 56px 0; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home">Muhammad Huzaifa</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <button class="icon-btn" type="button" aria-label="Toggle theme" onclick="toggleTheme()">☼</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home">
+    <header class="hero wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="status-pill"><span class="spark">✣</span> Available for Work</span>
+          <h1>Hello, I'm<br><span>Muhammad Huzaifa</span></h1>
+          <p class="hero-subtitle"><strong>AI Automation / Full Stack Engineer</strong> with <strong>6+ years</strong> of experience</p>
+          <p class="hero-copy">I build scalable SaaS platforms, Ruby on Rails applications, React/Vue frontends, Shopify solutions, APIs, AWS deployments, and practical AI-powered automation workflows that help teams ship faster.</p>
+
+          <div class="cta">
+            <a class="btn primary" href="Muhammad_Huzaifa_AI_Automation_Full_Stack_Engineer_Resume.pdf" target="_blank" rel="noopener">↓ Download Resume</a>
+            <a class="btn secondary" href="#projects">View My Work</a>
+          </div>
+
+          <div class="socials" aria-label="Social links">
+            <a class="social" href="https://github.com/m-huzaifa" target="_blank" rel="noopener" aria-label="GitHub">⌘</a>
+            <a class="social" href="https://linkedin.com/in/muhammad-huzaifa-dev" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a class="social" href="mailto:huzaifadev05@gmail.com" aria-label="Email">✉</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong>6+</strong><span>Years Experience</span></div>
+            <div class="stat"><strong>10+</strong><span>Projects</span></div>
+            <div class="stat"><strong>100%</strong><span>Client Satisfaction</span></div>
+          </div>
+        </div>
+
+        <div class="visual" aria-label="Profile visual">
+          <!-- <div class="portrait"></div> -->
+          <div class="floating-card"><span class="dot"></span> Available for hire</div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services" class="wrap">
+      <div class="section-title">
+        <h2>How I Can Help</h2>
+        <p>Engineering support for companies, startups, agencies, and e-commerce businesses looking for reliable full-stack delivery with practical AI automation skills.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card"><h3>AI Automation & LLM Features</h3></article>
+        <article class="service-card"><h3>Rails / React Full-Stack Development</h3></article>
+        <article class="service-card"><h3>Shopify & API Engineering</h3></article>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap">
+      <div class="section-title">
+        <h2>Technical Skills</h2>
+        <p>Comprehensive full-stack engineering expertise with a focus on scalable web applications, SaaS platforms, Shopify ecosystems, APIs, and AI automation workflows.</p>
+      </div>
+
+      <div class="skill-grid">
+        <article class="skill-card">
+          <h3>⚙ AI & Automation</h3>
+          <div class="chips"><span class="chip">AI-assisted Development</span><span class="chip">LLM Integrations</span><span class="chip">Prompt Engineering</span><span class="chip">ChatGPT</span><span class="chip">Codex</span><span class="chip">Workflow Automation</span></div>
+        </article>
+        <article class="skill-card">
+          <h3>◇ Backend Engineering</h3>
+          <div class="chips"><span class="chip">Ruby on Rails</span><span class="chip">REST APIs</span><span class="chip">GraphQL</span><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">Elasticsearch</span></div>
+        </article>
+        <article class="skill-card">
+          <h3>▣ Frontend Development</h3>
+          <div class="chips"><span class="chip">React</span><span class="chip">Vue.js</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Bootstrap</span></div>
+        </article>
+        <article class="skill-card">
+          <h3>◈ Shopify & E-commerce</h3>
+          <div class="chips"><span class="chip">Shopify Apps</span><span class="chip">Store Workflows</span><span class="chip">Chrome Extensions</span><span class="chip">Product Scraping</span><span class="chip">API Integrations</span></div>
+        </article>
+        <article class="skill-card">
+          <h3>☁ Cloud & DevOps</h3>
+          <div class="chips"><span class="chip">AWS EC2</span><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">CircleCI</span><span class="chip">Capistrano</span><span class="chip">CI/CD</span></div>
+        </article>
+        <article class="skill-card">
+          <h3>▦ Engineering Practices</h3>
+          <div class="chips"><span class="chip">Team Leadership</span><span class="chip">MVP Development</span><span class="chip">Testing</span><span class="chip">Performance Optimization</span><span class="chip">Figma</span><span class="chip">Git</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="wrap">
+      <div class="section-title">
+        <h2>Professional Experience</h2>
+        <p>Over 6 years of experience building scalable software, leading engineering teams, improving production systems, and delivering product-focused web applications.</p>
+      </div>
+
+      <div class="experience-list">
+        <article class="experience-card">
+          <div class="experience-head">
+            <div><div class="role-title">▥ Senior Software Engineer</div><div class="company">Tkxel</div></div>
+            <div class="meta"><span>Aug 2023 - Present</span><span>Remote / Pakistan</span></div>
+          </div>
+          <ul>
+            <li>Increased automated test coverage by 30% and reduced user-reported errors by 70%, improving code quality and platform reliability.</li>
+            <li>Modernized the main ordering module by replacing scraper-based workflows with API-driven integrations for better efficiency and user experience.</li>
+            <li>Applied AI-assisted engineering workflows using tools like ChatGPT and Codex for planning, debugging, refactoring, and documentation.</li>
+          </ul>
+          <div class="chips"><span class="chip">Rails</span><span class="chip">APIs</span><span class="chip">Testing</span><span class="chip">Automation</span><span class="chip">AI Workflows</span></div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-head">
+            <div><div class="role-title">▥ Senior Software Engineer / Team Lead</div><div class="company">IIFA Tech</div></div>
+            <div class="meta"><span>Jun 2021 - Jul 2023</span><span>Pakistan</span></div>
+          </div>
+          <ul>
+            <li>Led multiple SaaS development projects and managed engineering teams of up to 10 members.</li>
+            <li>Developed MVPs that helped clients validate product ideas and support investment conversations.</li>
+            <li>Managed AWS EC2 setups, deployment scripts, and CI/CD pipelines using GitHub Actions and CircleCI.</li>
+          </ul>
+          <div class="chips"><span class="chip">SaaS</span><span class="chip">Team Lead</span><span class="chip">AWS</span><span class="chip">CI/CD</span><span class="chip">MVPs</span></div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-head">
+            <div><div class="role-title">▥ Software Engineer / Contractor</div><div class="company">IUCN, Codverse, Qbatch</div></div>
+            <div class="meta"><span>Sep 2019 - Jul 2022</span><span>Remote / Pakistan</span></div>
+          </div>
+          <ul>
+            <li>Contributed to IUCN SIS-Connect and Red List workflows, reducing data errors by 25% and improving Elasticsearch query response time by 50%.</li>
+            <li>Built Shopify apps and a Chrome extension for product scraping and market research workflows.</li>
+            <li>Developed Rails backend features, API integrations, responsive frontend layouts, and optimized queries for datasets exceeding 10 million records.</li>
+          </ul>
+          <div class="chips"><span class="chip">Ruby on Rails</span><span class="chip">Shopify</span><span class="chip">Chrome Extension</span><span class="chip">Elasticsearch</span><span class="chip">10M+ Records</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>A selection of project categories that demonstrate my strengths in AI automation, full-stack SaaS development, Shopify engineering, APIs, and performance optimization.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-img ai"></div>
+          <div class="project-body">
+            <h3>AI Automation Workflows</h3>
+            <p>AI-assisted workflows for feature planning, code generation, debugging, refactoring, documentation, and software delivery using ChatGPT, Codex, and LLM/API patterns.</p>
+            <div class="chips"><span class="chip">ChatGPT</span><span class="chip">Codex</span><span class="chip">LLM APIs</span><span class="chip">Automation</span></div>
+            <div class="project-actions"><a class="small-btn" href="mailto:huzaifadev05@gmail.com">Discuss</a><a class="small-btn dark" href="#contact">Hire Me</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img saas"></div>
+          <div class="project-body">
+            <h3>SaaS & Rails Platforms</h3>
+            <p>Production web applications, MVPs, dashboards, APIs, authentication workflows, deployments, and backend systems built with Ruby on Rails and modern frontend stacks.</p>
+            <div class="chips"><span class="chip">Rails</span><span class="chip">React</span><span class="chip">GraphQL</span><span class="chip">AWS</span></div>
+            <div class="project-actions"><a class="small-btn" href="https://github.com/m-huzaifa" target="_blank" rel="noopener">GitHub</a><a class="small-btn dark" href="#contact">Contact</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img shopify"></div>
+          <div class="project-body">
+            <h3>Shopify & E-commerce Tools</h3>
+            <p>Shopify apps, e-commerce workflows, Chrome extensions, product scraping tools, store integrations, and API-based ordering improvements.</p>
+            <div class="chips"><span class="chip">Shopify Apps</span><span class="chip">APIs</span><span class="chip">Extensions</span><span class="chip">E-commerce</span></div>
+            <div class="project-actions"><a class="small-btn" href="#services">Services</a><a class="small-btn dark" href="#contact">Start</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <div class="section-title">
+        <h2>Let's Work Together</h2>
+        <p>Ready to discuss an AI automation, SaaS, full-stack, Rails, or Shopify opportunity? Send me a message.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-methods">
+          <a class="contact-card" href="mailto:huzaifadev05@gmail.com"><span>✉</span><div><strong>Email</strong><span>huzaifadev05@gmail.com</span></div></a>
+          <a class="contact-card" href="tel:+923336644487"><span>☎</span><div><strong>Phone</strong><span>+92 333 6644487</span></div></a>
+          <div class="contact-card"><span>⌖</span><div><strong>Location</strong><span>Pakistan / Available for Remote Work</span></div></div>
+        </div>
+
+        <form class="form-card" onsubmit="sendMail(event)">
+          <h3>Send a Message</h3>
+          <div class="form-row">
+            <input id="name" type="text" placeholder="Your Name" required />
+            <input id="email" type="email" placeholder="Your Email" required />
+          </div>
+          <input id="subject" type="text" placeholder="Subject" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button class="btn primary send" type="submit">✈ Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>Muhammad Huzaifa</strong>
+      AI Automation / Full Stack Engineer | Ruby on Rails | React | Shopify | SaaS | APIs | AWS<br />
+      © 2026 Muhammad Huzaifa. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    }
+    (function initTheme(){
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    })();
+    function sendMail(event) {
+      event.preventDefault();
+      const name = encodeURIComponent(document.getElementById('name').value);
+      const email = encodeURIComponent(document.getElementById('email').value);
+      const subject = encodeURIComponent(document.getElementById('subject').value);
+      const message = encodeURIComponent(document.getElementById('message').value);
+      const body = `Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
+      window.location.href = `mailto:huzaifadev05@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
