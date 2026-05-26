@@ -412,7 +412,7 @@
         <div class="hero-subtitle">AI Engineer / Full Stack Engineer <span>with 6+ years of experience</span></div>
         <p class="hero-copy">I build AI-powered applications, SaaS platforms, Rails backends, React/Vue frontends, Shopify solutions, APIs, and AWS deployments that help teams improve workflows and ship reliable products faster.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" id="resumeDownload" href="Huzaifa_Resume.pdf" download="Muhammad_Huzaifa_Resume.pdf" target="_blank" rel="noopener">↓ Download Resume</a>
+          <button class="btn btn-primary" id="resumeDownload" type="button" data-resume-url="Huzaifa_Resume.pdf" data-resume-name="Muhammad_Huzaifa_Resume.pdf">↓ Download Resume</button>
           <a class="btn btn-outline" href="#projects">View My Work</a>
         </div>
         <div class="socials">
@@ -622,8 +622,8 @@
     if (resumeDownload) {
       resumeDownload.addEventListener('click', async (event) => {
         event.preventDefault();
-        const fileUrl = resumeDownload.getAttribute('href');
-        const fileName = resumeDownload.getAttribute('download') || 'Muhammad_Huzaifa_Resume.pdf';
+        const fileUrl = resumeDownload.dataset.resumeUrl;
+        const fileName = resumeDownload.dataset.resumeName || 'Muhammad_Huzaifa_Resume.pdf';
 
         try {
           const response = await fetch(fileUrl);
